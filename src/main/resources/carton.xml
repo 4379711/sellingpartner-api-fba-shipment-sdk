@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope>
+    <Header>
+        <DocumentVersion>1.01</DocumentVersion>
+        <MerchantIdentifier>A36MCMZ9LZTDGA</MerchantIdentifier>
+    </Header>
+    <MessageType>CartonContentsRequest</MessageType>
+    <Message>
+        <MessageID>1</MessageID>
+        <CartonContentsRequest>
+            <ShipmentId>FBA16QDMKLKY</ShipmentId>
+            <NumCartons>3</NumCartons>
+            <Carton>
+                <CartonId>U000001</CartonId>
+                <Item>
+                    <SKU>main-K21-6.1-case</SKU>
+                    <!--excel中一号箱子里这个sku的数量-->
+                    <QuantityShipped>196</QuantityShipped>
+                    <!--随便乱写?-->
+                    <QuantityInCase>1</QuantityInCase>
+                </Item>
+            </Carton>
+            <Carton>
+                <CartonId>U000002</CartonId>
+                <Item>
+                    <SKU>main-K21-6.1-case</SKU>
+                    <!--excel中一号箱子里这个sku的数量-->
+                    <QuantityShipped>196</QuantityShipped>
+                    <!--随便乱写?-->
+                    <QuantityInCase>1</QuantityInCase>
+                </Item>
+            </Carton>
+            <Carton>
+                <CartonId>U000003</CartonId>
+                <Item>
+                    <SKU>main-K21-6.1-case</SKU>
+                    <QuantityShipped>196</QuantityShipped>
+                    <QuantityInCase>1</QuantityInCase>
+                </Item>
+            </Carton>
+        </CartonContentsRequest>
+    </Message>
+</AmazonEnvelope>

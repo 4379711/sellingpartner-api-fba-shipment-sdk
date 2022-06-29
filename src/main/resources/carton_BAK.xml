@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope>
+    <Header>
+        <DocumentVersion>1.01</DocumentVersion>
+        <MerchantIdentifier>A36MCMZ9LZTDGA</MerchantIdentifier>
+    </Header>
+    <MessageType>CartonContentsRequest</MessageType>
+    <Message>
+        <MessageID>1</MessageID>
+        <CartonContentsRequest>
+            <ShipmentId>FBA16QDMKLKY</ShipmentId>
+            <NumCartons>2</NumCartons>
+            <Carton>
+                <CartonId>U000001</CartonId>
+                <Item>
+                    <SKU>En-MK7-38mm-Case</SKU>
+                    <!--excel中一号箱子里这个sku的数量-->
+                    <QuantityShipped>4</QuantityShipped>
+                    <!--随便乱写?-->
+                    <QuantityInCase>1</QuantityInCase>
+                    <!--特殊的产品才需要过期时间 format MM-DD-YYYY or MM-YYYY-->
+                    <!--https://sellercentral.amazon.com/help/hub/reference/201003420-->
+                    <!--<ExpirationDate></ExpirationDate>-->
+                </Item>
+                <Item>
+                    <SKU>En-MK7-42mm-Case-Black</SKU>
+                    <QuantityShipped>12</QuantityShipped>
+                    <QuantityInCase>1</QuantityInCase>
+                </Item>
+            </Carton>
+            <Carton>
+                <CartonId>U000002</CartonId>
+                <Item>
+                    <SKU>En-MK7-38mm-Case</SKU>
+                    <QuantityShipped>6</QuantityShipped>
+                    <QuantityInCase>1</QuantityInCase>
+                </Item>
+                <Item>
+                    <SKU>En-MK7-42mm-Case-Black</SKU>
+                    <QuantityShipped>8</QuantityShipped>
+                    <QuantityInCase>1</QuantityInCase>
+                </Item>
+            </Carton>
+        </CartonContentsRequest>
+    </Message>
+</AmazonEnvelope>
